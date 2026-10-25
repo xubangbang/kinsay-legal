@@ -1,7 +1,7 @@
 # Kinsay legal pages
 
 Static legal documents for Kinsay, operated by Joe. Public contact:
-heyjoewynn@gmail.com. Effective date: October 22, 2026.
+heyjoewynn@gmail.com. Effective date: October 25, 2026.
 
 Only the contents of this directory belong in the public legal repository.
 App source, configuration, credentials, migrations, and internal product documents
@@ -30,12 +30,16 @@ directory, then open http://127.0.0.1:8765/.
 Update both document dates when their substance changes. Keep these documents
 aligned with the shipped app and actual provider configuration. In particular:
 
-- Account deletion deletes created Spaces, but messages in joined Spaces remain
-  as Deleted User. Message text itself is not anonymized.
+- Google sign-in SDK declarations include Analytics, linked identifiers/usage and
+  other categories. Do not claim the absence of all third-party analytics. See
+  `docs/app-privacy.md` in the app repository for the release disclosure worksheet.
+- Account deletion deletes created Spaces and permanently erases the person’s
+  original text in every other Space, even Spaces they have left. Empty deleted
+  placeholders preserve other people’s reply links.
 - Leaving a Space does not delete content. Reply deletion removes the text while
   preserving a placeholder when needed for other replies.
 - The service is described as free, without advertising, sale of personal data,
-  or behavioral analytics. The minimum age is 13 or the higher local minimum,
+  with provider sign-in analytics disclosed in the Privacy Policy. The minimum age is 13 or the higher local minimum,
   with guardian agreement for minors. Update these statements if practices change.
 - The operator supplied the name Joe and the contact above. No operator country
   was supplied, so the Terms preserve applicable law and mandatory consumer rights
