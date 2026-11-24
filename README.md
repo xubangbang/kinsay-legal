@@ -33,14 +33,19 @@ aligned with the shipped app and actual provider configuration. In particular:
 - Google sign-in SDK declarations include Analytics, linked identifiers/usage and
   other categories. Do not claim the absence of all third-party analytics. See
   `docs/app-privacy.md` in the app repository for the release disclosure worksheet.
-- Account deletion deletes created Spaces and permanently erases the person’s
-  original text in every other Space, even Spaces they have left. Empty deleted
+- Account deletion deletes created Spaces (including everyone's text, photos,
+  and voice messages in them) and permanently erases the person’s original text,
+  photos, and voice messages in every other Space, even Spaces they have left,
+  after physically purging the corresponding Storage objects. Empty deleted
   placeholders preserve other people’s reply links.
-- Leaving a Space does not delete content. Reply deletion removes the text while
-  preserving a placeholder when needed for other replies.
-- The service is described as free, without advertising, sale of personal data,
-  with provider sign-in analytics disclosed in the Privacy Policy. The minimum age is 13 or the higher local minimum,
-  with guardian agreement for minors. Update these statements if practices change.
+- Leaving a Space does not delete content. Reply deletion removes the text and
+  media while preserving a placeholder when needed for other replies.
+- Core text sharing is free; optional paid features (photos, voice messages, and
+  creating a second Space, covering up to 2 Spaces per subscription) are offered
+  via Kinsay Plus auto-renewing Apple In-App Purchase subscriptions. There is no
+  advertising or sale of personal data, with provider sign-in analytics disclosed
+  in the Privacy Policy. The minimum age is 13 or the higher local minimum, with
+  guardian agreement for minors. Update these statements if practices change.
 - The operator supplied the name Joe and the contact above. No operator country
   was supplied, so the Terms preserve applicable law and mandatory consumer rights
   without inventing an exclusive jurisdiction. Country-specific disclosures and
