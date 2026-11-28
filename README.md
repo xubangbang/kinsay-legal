@@ -8,7 +8,10 @@ The primary Kinsay website and legal pages are hosted on Cloudflare Pages at
 https://kinsayapp.com (`/privacy`, `/terms`, `/support`). This directory
 continues to back https://xubangbang.github.io/kinsay-legal/ for shipped iOS
 builds (`v1.1.0` and earlier) whose in-app `LegalDocumentView` still loads
-those URLs. Do not delete this mirror while those builds remain in use.
+those URLs. `privacy.html` and `terms.html` redirect automatically to
+`https://kinsayapp.com/privacy` and `https://kinsayapp.com/terms` (with
+`<noscript>` links as fallback) so `website/public/` remains the single source
+of truth. Do not delete this mirror while those builds remain in use.
 
 Only the contents of this directory belong in the public legal repository.
 App source, configuration, credentials, migrations, and internal product documents
