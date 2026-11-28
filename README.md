@@ -1,7 +1,14 @@
-# Kinsay legal pages
+# Kinsay legal pages (legacy compatibility mirror)
 
 Static legal documents for Kinsay, operated by Joe. Public contact:
-heyjoewynn@gmail.com. Effective date: October 25, 2026.
+support@kinsayapp.com. Effective date: October 25, 2026; last updated:
+November 28, 2026.
+
+The primary Kinsay website and legal pages are hosted on Cloudflare Pages at
+https://kinsayapp.com (`/privacy`, `/terms`, `/support`). This directory
+continues to back https://xubangbang.github.io/kinsay-legal/ for shipped iOS
+builds (`v1.1.0` and earlier) whose in-app `LegalDocumentView` still loads
+those URLs. Do not delete this mirror while those builds remain in use.
 
 Only the contents of this directory belong in the public legal repository.
 App source, configuration, credentials, migrations, and internal product documents
@@ -9,9 +16,12 @@ are not part of the legal website.
 
 ## Published URLs
 
-- Home: https://xubangbang.github.io/kinsay-legal/
-- Privacy Policy: https://xubangbang.github.io/kinsay-legal/privacy.html
-- Terms of Service: https://xubangbang.github.io/kinsay-legal/terms.html
+- Official Privacy Policy: https://kinsayapp.com/privacy
+- Official Terms of Service: https://kinsayapp.com/terms
+- Official Support: https://kinsayapp.com/support
+- Legacy Home: https://xubangbang.github.io/kinsay-legal/
+- Legacy Privacy Policy: https://xubangbang.github.io/kinsay-legal/privacy.html
+- Legacy Terms of Service: https://xubangbang.github.io/kinsay-legal/terms.html
 
 ## Hosting
 
